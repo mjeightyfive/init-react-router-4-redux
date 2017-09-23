@@ -1,0 +1,24 @@
+*,
+*:after,
+*:before {
+    @include box-sizing(border-box);
+}
+
+body {
+    &:after {
+        @include mq-helper;
+    }
+
+    font-family: Arial;
+}
+
+$red: #b00;
+
+.container {
+    margin: 100px auto;
+    width: 80%;
+}
+
+#main {
+    //
+}

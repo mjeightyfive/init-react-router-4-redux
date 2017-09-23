@@ -1,0 +1,15 @@
+// NOTE: material design breakpoints
+// 480, 600, 840, 960, 1280, 1440, and 1600dp.
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-large: 1440px;
+
+// override for ../node_modules/include-media/dist/_include-media.scss
+$breakpoints: (
+    'mobile': $mobile,
+    'tablet': $tablet,
+    'desktop': $desktop,
+    'desktop-large': $desktop-large
+);

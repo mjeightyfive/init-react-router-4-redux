@@ -1,0 +1,31 @@
+$num-colors: 5; // set it to number of breakpoints
+$base-color: #bbb000;
+$i: 0;
+
+@mixin mq-helper {
+    @each $key,
+    $breakpoint in $breakpoints {
+        $i: $i + 1;
+
+        @include media(">=#{$key}") {
+            content: '#{$key} - #{$breakpoint}';
+            background-color: adjust-hue($base-color, 360deg / $num-colors * $i);
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 5px;
+            color: white;
+            text-shadow: 1px 1px 1px grey;
+            font-size: 8px;
+            font-weight: 400;
+            z-index: 9999;
+            display: block;
+        }
+    }
+}
+
+body {
+    &:after {
+        @include mq-helper;
+    }
+}
