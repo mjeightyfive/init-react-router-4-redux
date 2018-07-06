@@ -1,7 +1,7 @@
 // vendor
-@import '../../node_modules/compass-mixins/lib/compass';
-@import '../../node_modules/normalize.css/normalize';
-@import '../../node_modules/include-media/dist/include-media';
+@import '~compass-mixins/lib/compass';
+@import '~modern-normalize/modern-normalize.css';
+@import '~include-media/dist/include-media';
 
 // global
 @import 'breakpoints';

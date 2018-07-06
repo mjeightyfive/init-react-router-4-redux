@@ -1,4 +1,9 @@
-dist
+### Firebase ###
+firebase-debug.log
+
+### Hugo ###
+hugo.exe
+dist/
 
 # Icon must ends with two \r.
 Icon

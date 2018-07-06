@@ -9,7 +9,7 @@
 ## Usage
 
 `npm start` - build and watch for changes<br>
-`npm run prod` - build optimised version (for production)<br>
+`npm run build` - build optimised version (for production)<br>
 
 ## License
 

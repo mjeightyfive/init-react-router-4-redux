@@ -1,9 +1,19 @@
 {
     "extends": "stylelint-config-standard",
     "rules": {
-        "indentation": 4,
-        "string-quotes": "single",
+        "at-rule-no-unknown": [
+            true,
+            {
+                "ignoreAtRules": [
+                    "include",
+                    "media",
+                    "mixin"
+                ]
+            }
+        ],
+        "color-named": "always-where-possible",
         "declaration-no-important": true,
-        "color-named": "always-where-possible"
+        "indentation": 4,
+        "string-quotes": "single"
     }
 }
