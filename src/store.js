@@ -1,4 +1,4 @@
-import { routerReducer, routerMiddleware } from 'react-router-redux';
+import { routerReducer, routerMiddleware, connectRouter } from 'connected-react-router';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { createBrowserHistory } from 'history';
 
@@ -9,7 +9,7 @@ const middleware = [routerMiddleware(history)];
 const store = createStore(
     combineReducers({
         // ...reducers,
-        router: routerReducer
+        router: connectRouter(history)
     }),
     applyMiddleware(...middleware)
 );
